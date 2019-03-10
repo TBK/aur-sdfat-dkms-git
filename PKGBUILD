@@ -10,6 +10,7 @@ arch=('any')
 url='https://github.com/cryptomilk/kernel-sdfat'
 license=('GPL2')
 depends=('dkms')
+optdepends=('exfat-utils-nofuse: Tools for managening Exfat')
 makedepends=('git' 'linux-headers')
 conflicts=('vfat' 'exfat' 'exfat-dkms-git' 'sdfat-dkms-git')
 options=('!strip')
