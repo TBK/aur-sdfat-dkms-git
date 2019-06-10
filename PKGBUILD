@@ -1,5 +1,5 @@
-# Maintainer: TBK <aur at jjtc dot eu>
-# Contributor: TBK <aur at jjtc dot eu>
+# Maintainer: TBK <aur@jjtc.eu>
+# Contributor: TBK <aur@jjtc.eu>
 
 pkgname=sdfat-dkms-git
 _gitname=kernel-sdfat
@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc='FAT12/16/32(VFAT)/64(exFAT) filesytems kernel module - use with DKMS'
 arch=('any')
 url='https://github.com/cryptomilk/kernel-sdfat'
-license=('GPL2')
+license=('GPL-2.0-only')
 depends=('dkms')
 optdepends=('exfat-utils-nofuse: Tools for managening Exfat')
 makedepends=('git' 'linux-headers')
@@ -22,7 +22,7 @@ source=("${_gitname}::git+${url}.git"
         fix-makefile.patch
         fix-module_alias.patch)
 sha512sums=('SKIP'
-            'd61b198adef98554767c596e9708b64a6ed8cd2ffd382c8cb38938fc467d27e8849969ea94d803683d44397b4f5f0c512c01ed05d0f35fb03611f56401e19a31'
+            'a71f3c7fd5e3a5ec285dd2abde1e460ebb904353d0fe7dac5296685bcb395b9bdccf5caa7c01657fdf041a4761f221e6617e99dfed7b867c1c7dc93d1a740a52'
             '85c54950e69e342221343b8b542fda47f80b9a7104e1097a7f1c9a09f69758ef8881c238d2740f3a21aa2b5cdcb3b9b8224c731ec2e39fa4632f56c2df85bc84'
             'a84005de882a14a29252956f009d9785435a1dff7e578537eb5d0f222e2d89925aa95f883cd7817becac384ebaa4cc44ef636a41ea8e063b306cfa33add54a69'
             'c0e4d47b070373da4a3a201289fc56b734f6b31659d27b9772b48a2ea440247b0c619cf71a99dd02041d67ab9fbf9865ff443c70a456389dcc3b3ac985b229d1'
